@@ -14,7 +14,7 @@ var io = socketIO(server)
 app.use(express.static(publicPath))
 
 io.on('connection',(socket)=>{
-	console.log('new connection')
+	console.log('new connection');
 
 socket.emit('newMessage',{
 	from : 'amazing@world.com',
@@ -23,7 +23,7 @@ socket.emit('newMessage',{
 });
 
 socket.on('createMessage',(message) => {
-	console.log('createMessage',message)
+	console.log('createMessage',message);
 })
 socket.on('disconnect',() => {
 

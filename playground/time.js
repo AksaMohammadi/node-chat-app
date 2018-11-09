@@ -12,8 +12,8 @@ var moment = require('moment')
 // console.log(tim.format('h:m p'))
 // console.log(tim.format('hh:mm A'))
 
-var someTimestramp = moment().valueOf();
-console.log(someTimestramp);
+var someTimestamp = moment().valueOf();
+console.log(someTimestamp);
 
 var createdAt =1234;
 var date = moment(createdAt)
